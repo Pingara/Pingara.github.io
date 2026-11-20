@@ -1,0 +1,144 @@
+:root {
+  --ink: #1a1f2b;
+  --muted: #5b6475;
+  --line: #d9dee7;
+  --bg: #f7f5f1;
+  --card: #ffffff;
+  --accent: #0b6e4f;
+  --accent-dark: #08553c;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+header.site {
+  background: var(--card);
+  border-bottom: 1px solid var(--line);
+  padding: 16px 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand img {
+  width: 48px;
+  height: 48px;
+}
+
+.brand h1,
+.brand .name {
+  margin: 0;
+  font-size: 1.35rem;
+  letter-spacing: 0.02em;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  margin-top: 12px;
+}
+
+nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-family: system-ui, sans-serif;
+  font-size: 0.95rem;
+}
+
+nav a:hover { text-decoration: underline; }
+
+main { padding: 32px 0 48px; }
+
+h1.page-title {
+  font-size: 2rem;
+  margin: 0 0 8px;
+}
+
+.lede {
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin: 0 0 28px;
+}
+
+h2 {
+  font-size: 1.35rem;
+  margin: 28px 0 12px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 6px;
+}
+
+p { margin: 0 0 14px; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 16px 0;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+  max-width: 420px;
+}
+
+label {
+  font-family: system-ui, sans-serif;
+  font-size: 0.9rem;
+  display: grid;
+  gap: 4px;
+}
+
+input {
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: fit-content;
+}
+
+button:hover { background: var(--accent-dark); }
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 20px 0 32px;
+  color: var(--muted);
+  font-family: system-ui, sans-serif;
+  font-size: 0.85rem;
+}
+
+.login-box {
+  max-width: 400px;
+  margin: 48px auto;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 28px;
+}

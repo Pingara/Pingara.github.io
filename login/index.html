@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in — Verdict Test Shop</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <div class="brand">
+        <img src="/logo.svg" width="48" height="48" alt="Verdict Test Shop logo">
+        <span class="name">Verdict Test Shop</span>
+      </div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/#catalog">Catalog</a>
+        <a href="/#about">About</a>
+        <a href="/login">Account</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="login-box">
+      <h1 class="page-title">Sign in</h1>
+      <p>Use your workshop account to view orders and restock notes. This page is part of the Verdict test shop and is not a real customer login.</p>
+      <form id="login-form" action="/login" method="post">
+        <label>Email
+          <input type="email" name="email" autocomplete="username" required>
+        </label>
+        <label>Password
+          <input type="password" name="password" autocomplete="current-password" required>
+        </label>
+        <button type="submit">Sign in</button>
+      </form>
+      <p id="form-note"></p>
+    </div>
+  </main>
+  <footer>
+    <div class="wrap">
+      <p>&copy; <span id="year">2026</span> Verdict Test Shop.</p>
+    </div>
+  </footer>
+  <script src="/app.js"></script>
+</body>
+</html>
