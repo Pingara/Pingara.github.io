@@ -2,9 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>We'll be back soon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verdict Test Shop</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <p>We'll be back soon</p>
+  <header class="site">
+    <div class="wrap">
+      <div class="brand">
+        <img src="/logo.svg" width="48" height="48" alt="Verdict Test Shop logo">
+        <span class="name">Verdict Test Shop</span>
+      </div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/#catalog">Catalog</a>
+        <a href="/#about">About</a>
+        <a href="/login">Account</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <h1 class="page-title">Handmade goods, shipped with care</h1>
+    <p class="lede">A small workshop catalog used to test broken-page detection. The layout, copy and assets are stable on a healthy day, and can be switched into a broken shape without changing the public address.</p>
+
+    <section id="catalog">
+      <h2>This week's catalog</h2>
+      <p>We restock oak serving boards, linen tea towels and stoneware mugs every Thursday morning. Each piece is finished by hand in the studio, then packed in recycled paper and sent out the same afternoon when we can.</p>
+      <p>If an item has already sold, join the wait list below and we will write when the next batch is ready. We do not hold a public queue, and we do not take payment until a piece is reserved for you.</p>
+      <p>Boards are cut from leftover workshop oak, planed smooth and finished with a food-safe oil. Tea towels are mid-weight linen, hemmed on all four sides. Mugs are thrown in small lots, so glaze and capacity can vary slightly from piece to piece.</p>
+      <div class="card">
+        <h2>Get a note when we restock</h2>
+        <p>Leave a name and email and we will send one message when the next drop is packed. We will not add you to a newsletter.</p>
+        <form id="notify-form" action="/" method="post">
+          <label>Name
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <button type="submit">Notify me</button>
+        </form>
+        <p id="form-note"></p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About the workshop</h2>
+      <p>Verdict Test Shop is a stand-in storefront. It is built so an uptime monitor can learn a normal page: a title, navigation, a main column with headings and paragraphs, a short form, a logo image, a footer, one stylesheet and one same-site script.</p>
+      <p>When the shop is healthy, this page should look the same on every check. When we are testing a broken state, the same URL may redirect to sign-in, show a maintenance note, serve an error message, drop the script, or return an almost empty body.</p>
+      <p>Shipping is usually two to five working days within the UK, a little longer for the rest of Europe. We pack each order ourselves, include a handwritten note, and email a tracking link once the parcel has left the studio.</p>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <p>&copy; <span id="year">2026</span> Verdict Test Shop. Studio hours Tuesday to Saturday, 10:00 to 16:00.</p>
+    </div>
+  </footer>
+  <script src="/app.js"></script>
 </body>
 </html>
